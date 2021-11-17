@@ -14,12 +14,6 @@ public class ConsoleReaderAdapter {
     }
 
     public Boolean matches(){
-        boolean contains = positives.contains(reader.readLine());
-
-        if(contains){
-          return true;
-        }
-        return false;
+        return positives.contains(reader.readLine());
     }
-
 }

@@ -34,7 +34,10 @@ public class Main {
             writer.write(bad);
         }
 
-        // allow user to read our response
-        reader.readLine();
+        writer.write("Would you like to continue?");
+
+        if(adapter.matches()){
+            main(null);
+        }
     }
 }
